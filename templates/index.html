@@ -3,7 +3,7 @@
 
 <head>
     <title>Black Lives Matter</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 
 <body>
@@ -14,7 +14,7 @@
                     <ul>
                         {% for file in files %}
                         <li>
-                            <a href="/{{ file }}" target="clips">{{ file }}</a>
+                            <a href="/{{ file }}">{{ file }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -22,11 +22,7 @@
             </div>
             <div class="column">
                 <div class="videoframe">
-                    <iframe name="clips">
-                        {% if active %}
-                            <video src="{{ url_for('static', filename='videos/{{ active }}') }}" autoplay=true controls=true>
-                            </video>
-                        {% endif %}
+                    <iframe name="clips" src="/static/videos/{{ active }}">
                     </iframe>
                 </div>
             </div>

@@ -8,6 +8,6 @@ app = Flask(__name__)
 @app.route("/<active>")
 def index(active):
     path = os.getcwd() + "\\static\\videos"
-    print(path)
     files = os.listdir(path)
+    print(active)
     return render_template("index.html", files=files, active=active)
