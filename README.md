@@ -8,7 +8,7 @@ python3 -m pip install virtualenv --user
 virtualenv .env
 source .env/bin/activate
 pip install flask
-flask run [requires flask to be installed]
+flask run
 ```
 
 If you are running the software on Windows, activating the virtual environment will be different. I recommend using `git bash` to maintain the steps required. 
