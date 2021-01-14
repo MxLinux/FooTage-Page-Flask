@@ -10,4 +10,4 @@ pip install flask
 flask run [requires flask to be installed]
 ```
 
-If you are running the software on Windows, activating the virtual environment will be differnet. I recommend using `git bash` to maintain the steps required. 
+If you are running the software on Windows, activating the virtual environment will be different. I recommend using `git bash` to maintain the steps required. 
