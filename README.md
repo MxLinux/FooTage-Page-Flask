@@ -11,6 +11,6 @@ pip install flask
 flask run
 ```
 
-If you are running the software on Windows, activating the virtual environment will be different. I recommend using `git bash` to maintain the steps required. 
+If you are running the software on Windows, activating the virtual environment will be different. I recommend using `git bash` or `WSL` to maintain the steps required. 
 
 Videos go in `static/videos`.
